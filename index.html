@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111412">
+  <meta name="description" content="Discover better watches with AEVOR. Explore curated watches, compare specifications, find your style and shop smarter.">
+  <meta name="keywords" content="watches, men's watches, women's watches, analog watches, digital watches, watch comparison, affordable watches">
+  <meta name="author" content="AEVOR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AEVOR — Discover Better. Choose Smarter.">
+  <meta property="og:description" content="A smarter way to discover your next watch.">
+  <meta property="og:image" content="assets/aevor-social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>AEVOR — Discover Better. Choose Smarter.</title>
+  <link rel="canonical" href="./">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"AEVOR",
+    "description":"A premium watch discovery and comparison experience.",
+    "potentialAction":{"@type":"SearchAction","target":"./?q={search_term_string}","query-input":"required name=search_term_string"}
+  }
+  </script>
+</head>
+<body>
+  <div class="announcement"><span class="pulse-dot"></span> A smarter way to discover your next watch <span class="announcement-tag">CURATED DISCOVERY</span></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="AEVOR home">
+      <span class="brand-mark">A<span>.</span></span><span class="brand-name">AEVOR<small>DISCOVER BETTER</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#catalogue" class="nav-link">All Watches</a>
+      <a href="#catalogue" data-filter-link="men" class="nav-link">Men</a>
+      <a href="#catalogue" data-filter-link="women" class="nav-link">Women</a>
+      <a href="#collections" class="nav-link">Collections</a>
+      <a href="#journal" class="nav-link">Journal</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="search-open" aria-label="Open search" title="Search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme"><svg viewBox="0 0 24 24"><path d="M20.5 15.2A8.6 8.6 0 0 1 8.8 3.5 8.7 8.7 0 1 0 20.5 15.2Z"/></svg></button>
+      <button class="icon-btn count-btn" id="wishlist-open" aria-label="Open wishlist" title="Wishlist"><svg viewBox="0 0 24 24"><path d="M20.8 8.7c0 5.2-8.8 11-8.8 11s-8.8-5.8-8.8-11A4.7 4.7 0 0 1 12 6.1a4.7 4.7 0 0 1 8.8 2.6Z"/></svg><span id="wishlist-count">0</span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div><div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE ART OF CHOOSING TIME</div>
+        <h1>Time is personal.<br><em>Choose</em> accordingly.</h1>
+        <p>Discover watches that match your pace, your style, and your everyday life. Less searching. Better choosing.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#catalogue">Explore the collection <span>↗</span></a><button class="btn btn-ghost" id="finder-open">Find my watch <span>✳</span></button></div>
+        <div class="hero-proof"><div class="proof-item"><b id="hero-product-count">19+</b><span>Curated watches</span></div><div class="proof-divider"></div><div class="proof-item"><b>01</b><span>Smarter choice</span></div><div class="proof-divider"></div><div class="proof-item"><b>100%</b><span>Independent discovery</span></div></div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-art-label label-top">AEVOR / OBJECTS OF TIME</div>
+        <div class="hero-watch-frame"><img src="https://rokbucket.rokomari.io/ProductNew20190903/260X372/Olevs_Automatic_Watch_for_Men_9901-OLEVS-3f72f-292680.jpg" alt="Olevs 9901 automatic watch" fetchpriority="high"></div>
+        <div class="hero-art-caption"><span>01 / EDITOR'S SELECTION</span><b>Precision meets presence.</b></div>
+        <div class="floating-note"><span class="note-icon">✳</span><span><b>Find your match</b><small>Not just another watch.</small></span></div>
+      </div>
+      <a class="scroll-cue" href="#collections"><span></span> SCROLL TO DISCOVER</a>
+    </section>
+
+    <section class="ticker" aria-label="AEVOR principles"><div class="ticker-track"><span>DISCOVER BETTER</span><i>✳</i><span>CHOOSE SMARTER</span><i>✳</i><span>TIME, YOUR WAY</span><i>✳</i><span>DISCOVER BETTER</span><i>✳</i><span>CHOOSE SMARTER</span><i>✳</i><span>TIME, YOUR WAY</span><i>✳</i></div></section>
+
+    <section class="section collections-section" id="collections">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> EXPLORE WITH INTENTION</div><h2>Find your <em>kind</em> of time.</h2></div><p>Start with a style, a purpose, or simply a feeling. Your next favourite is closer than you think.</p></div>
+      <div class="collection-grid">
+        <a class="collection-card collection-men reveal" href="#catalogue" data-filter-link="men"><div class="collection-overlay"></div><div class="collection-content"><span>01 / THE CLASSICS</span><h3>For Him</h3><b>Explore men's watches ↗</b></div></a>
+        <a class="collection-card collection-women reveal" href="#catalogue" data-filter-link="women"><div class="collection-overlay"></div><div class="collection-content"><span>02 / REFINED DETAILS</span><h3>For Her</h3><b>Explore women's watches ↗</b></div></a>
+        <a class="collection-card collection-digital reveal" href="#catalogue" data-filter-link="digital"><div class="collection-overlay"></div><div class="collection-content"><span>03 / FUNCTION FIRST</span><h3>Digital Era</h3><b>Explore digital watches ↗</b></div></a>
+      </div>
+    </section>
+
+    <section class="section catalogue-section" id="catalogue">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE AEVOR CATALOGUE</div><h2>Good taste. <em>Great timing.</em></h2></div><p>Thoughtfully selected watches, organised to make your decision easier.</p></div>
+      <div class="catalogue-toolbar">
+        <div class="catalogue-tabs" role="group" aria-label="Product category">
+          <button class="filter-tab active" data-category="all">All watches <span id="tab-all-count"></span></button>
+          <button class="filter-tab" data-category="men">Men</button><button class="filter-tab" data-category="women">Women</button>
+          <button class="filter-tab" data-category="analog">Analog</button><button class="filter-tab" data-category="digital">Digital</button><button class="filter-tab" data-category="smart">Smart</button>
+        </div>
+        <div class="toolbar-right"><button class="filter-open-btn" id="filters-toggle"><svg viewBox="0 0 24 24"><path d="M4 7h16M7 12h10m-7 5h4"/><circle cx="8" cy="7" r="1.5"/><circle cx="16" cy="12" r="1.5"/><circle cx="10" cy="17" r="1.5"/></svg> Filters <span id="filter-active-count"></span></button><select id="sort-select" aria-label="Sort watches"><option value="featured">Sort: Featured</option><option value="price-low">Price: Low to high</option><option value="price-high">Price: High to low</option><option value="name">Name: A to Z</option></select></div>
+      </div>
+      <div class="filter-panel" id="filter-panel" hidden>
+        <div class="filter-group"><label for="gender-filter">Gender</label><select id="gender-filter"><option value="">All</option><option value="Men">Men</option><option value="Women">Women</option><option value="Unisex">Unisex</option></select></div>
+        <div class="filter-group"><label for="type-filter">Display</label><select id="type-filter"><option value="">All types</option><option>Analog</option><option>Digital</option><option>Smart</option></select></div>
+        <div class="filter-group"><label for="strap-filter">Strap</label><select id="strap-filter"><option value="">Any strap</option><option>Leather</option><option>Stainless Steel</option><option>Silicone</option><option>Resin</option><option>Not specified</option></select></div>
+        <div class="filter-group"><label for="movement-filter">Movement</label><select id="movement-filter"><option value="">Any movement</option><option>Quartz</option><option>Automatic</option><option>Digital</option><option>Not specified</option></select></div>
+        <div class="filter-group"><label for="style-filter">Style</label><select id="style-filter"><option value="">Any style</option><option>Casual</option><option>Formal</option><option>Sports</option><option>Minimal</option></select></div>
+        <div class="filter-group"><label for="budget-filter">Budget</label><select id="budget-filter"><option value="">Any budget</option><option value="1000">Under ৳1,000</option><option value="2000">Under ৳2,000</option><option value="3000">Under ৳3,000</option><option value="5000">Under ৳5,000</option></select></div>
+        <button class="text-btn" id="clear-filters">Clear all</button>
+      </div>
+      <div class="search-inline"><span>⌕</span><input id="catalogue-search" type="search" placeholder="Search by watch name or brand..." autocomplete="off"><kbd>/</kbd></div>
+      <div class="results-line"><span id="results-count">Showing all watches</span><span>Prices shown in BDT · Marketplace prices may change</span></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>No watches found</h3><p>Try changing your filters or search terms.</p><button class="btn btn-outline" id="empty-reset">Reset catalogue</button></div>
+      <div class="catalogue-bottom"><span>CURATED FOR THE CONSIDERED BUYER</span><button class="text-btn" id="budget-open">Find watches within my budget ↗</button></div>
+    </section>
+
+    <section class="editor-section">
+      <div class="editor-visual"><div class="editor-ring"></div><img id="editor-image" src="" alt="AEVOR editor's choice watch" loading="lazy"><span class="editor-stamp">AEVOR<br>SELECTS</span></div>
+      <div class="editor-copy reveal"><div class="eyebrow"><span class="eyebrow-line"></span> THE AEVOR EDIT</div><div class="editor-kicker">EDITOR'S CHOICE / <span id="editor-index">01</span></div><h2 id="editor-name">A considered choice.</h2><p id="editor-description">A standout selection from the AEVOR catalogue.</p><div class="editor-price" id="editor-price"></div><div class="editor-actions"><button class="btn btn-primary" id="editor-view">Discover this watch ↗</button><button class="icon-btn editor-next" id="editor-next" aria-label="Next editor's choice">↗</button></div></div>
+    </section>
+
+    <section class="section feature-strip">
+      <div class="feature-intro reveal"><div class="eyebrow"><span class="eyebrow-line"></span> MORE THAN A CATALOGUE</div><h2>Clarity is the<br><em>real luxury.</em></h2><p>Good decisions start with good information. AEVOR gives you the tools to find what fits.</p><button class="btn btn-outline" id="finder-open-2">Find your watch <span>✳</span></button></div>
+      <div class="feature-list">
+        <button class="feature-row reveal" id="feature-compare"><span class="feature-number">01</span><span class="feature-icon">⇄</span><span><b>Comparison Studio</b><small>See the details side by side.</small></span><span class="feature-arrow">↗</span></button>
+        <button class="feature-row reveal" id="feature-finder"><span class="feature-number">02</span><span class="feature-icon">✳</span><span><b>Watch Personality Finder</b><small>Get matched to your preferences.</small></span><span class="feature-arrow">↗</span></button>
+        <button class="feature-row reveal" id="feature-watchlist"><span class="feature-number">03</span><span class="feature-icon">♡</span><span><b>Your Watchlist</b><small>Keep your favourites close.</small></span><span class="feature-arrow">↗</span></button>
+        <button class="feature-row reveal" id="feature-budget"><span class="feature-number">04</span><span class="feature-icon">৳</span><span><b>Budget Optimizer</b><small>Discover options within your budget.</small></span><span class="feature-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="section utility-section" id="recent-section" hidden><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> PICK UP WHERE YOU LEFT OFF</div><h2>Recently <em>viewed.</em></h2></div></div><div class="mini-product-row" id="recent-grid"></div></section>
+    <section class="section utility-section" id="watchlist-section" hidden><div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> SAVED FOR LATER</div><h2>Your <em>watchlist.</em></h2></div><button class="text-btn" id="share-watchlist">Share watchlist ↗</button></div><div class="mini-product-row" id="watchlist-grid"></div></section>
+
+    <section class="section journal-section" id="journal">
+      <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> THE AEVOR JOURNAL</div><h2>Know more. <em>Choose well.</em></h2></div><p>Simple, useful knowledge for making a more confident watch choice.</p></div>
+      <div class="journal-grid">
+        <article class="journal-card reveal"><div class="journal-art journal-art-one"><span>01 / MOVEMENT</span><b>Q</b><i>VS</i><b>A</b></div><div class="journal-meta">WATCH KNOWLEDGE · 4 MIN READ</div><h3>Quartz vs Automatic: What's the difference?</h3><p>Understand two popular watch movements and what they mean for everyday wear.</p><button class="text-btn guide-open" data-guide="movement">Read the guide ↗</button></article>
+        <article class="journal-card reveal"><div class="journal-art journal-art-two"><span>02 / YOUR FIRST WATCH</span><b>01</b><i>THE RIGHT START</i></div><div class="journal-meta">BUYING GUIDE · 5 MIN READ</div><h3>How to choose your first watch</h3><p>A practical starting point for style, comfort, movement and budget.</p><button class="text-btn guide-open" data-guide="first">Read the guide ↗</button></article>
+        <article class="journal-card reveal"><div class="journal-art journal-art-three"><span>03 / MATERIALS</span><b>FORM</b><i>MEETS FUNCTION</i></div><div class="journal-meta">STYLE NOTES · 3 MIN READ</div><h3>Leather vs Stainless Steel straps</h3><p>Explore the look, feel and everyday considerations of two classic materials.</p><button class="text-btn guide-open" data-guide="strap">Read the guide ↗</button></article>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-mark">A<span>.</span></div><div class="eyebrow">INTRODUCING AEVOR</div><h2>A new perspective on time,<br>crafted for those who <em>value every second.</em></h2><p>AEVOR brings a more thoughtful way to discover watches. We curate, compare and guide — so you can spend less time searching and more time choosing what feels right.</p><div class="manifesto-signature">AEVOR <span>— DISCOVER BETTER. CHOOSE SMARTER.</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main"><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">A<span>.</span></span><span class="brand-name">AEVOR<small>DISCOVER BETTER</small></span></a><p>A smarter way to discover your next watch.</p></div><div class="footer-col"><b>EXPLORE</b><a href="#catalogue">All Watches</a><a href="#collections">Collections</a><a href="#journal">Watch Journal</a><button id="footer-finder">Personality Finder</button></div><div class="footer-col"><b>YOUR SPACE</b><button id="footer-wishlist">My Watchlist</button><button id="footer-compare">Compare Watches</button><button id="footer-theme">Switch Theme</button></div><div class="footer-col"><b>CONNECT</b><a href="https://www.facebook.com/share/1A58M9Cohv/" target="_blank" rel="noopener noreferrer">Facebook ↗</a><a href="#about">About AEVOR</a><span>Independent watch discovery</span></div></div>
+    <div class="footer-bottom"><span>© <span id="year"></span> AEVOR. All rights reserved.</span><span>Product information and prices are indicative. Always verify details on the seller's page.</span><a href="#top">BACK TO TOP ↑</a></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="mobile-drawer" aria-label="Mobile navigation"><button class="modal-close" data-close>×</button><div class="drawer-logo">AEVOR<span>.</span></div><a href="#home">Home</a><a href="#catalogue">All Watches</a><a href="#collections">Collections</a><a href="#journal">Watch Journal</a><button id="drawer-finder">Find my watch ✳</button><a href="https://www.facebook.com/share/1A58M9Cohv/" target="_blank" rel="noopener">Contact ↗</a></aside>
+
+  <section class="modal search-modal" id="search-modal" role="dialog" aria-modal="true" aria-label="Search watches"><button class="modal-close" data-close>×</button><div class="eyebrow">FIND YOUR NEXT WATCH</div><input id="global-search" type="search" placeholder="Search watches, brands, styles..." autocomplete="off"><p>Try “Casio”, “digital” or “under 1000”.</p><div id="search-suggestions"></div></section>
+
+  <section class="modal product-modal" id="product-modal" role="dialog" aria-modal="true" aria-label="Watch details"><button class="modal-close" data-close>×</button><div id="product-modal-content"></div></section>
+
+  <section class="modal compare-modal" id="compare-modal" role="dialog" aria-modal="true" aria-label="Watch comparison"><button class="modal-close" data-close>×</button><div class="eyebrow">AEVOR TOOL / 01</div><h2>Comparison <em>studio.</em></h2><p class="modal-lead">Compare up to three watches to see which one fits your priorities.</p><div id="compare-content"></div></section>
+
+  <section class="modal finder-modal" id="finder-modal" role="dialog" aria-modal="true" aria-label="Watch personality finder"><button class="modal-close" data-close>×</button><div class="eyebrow">AEVOR TOOL / 02</div><div class="quiz-progress"><span id="quiz-progress-fill"></span></div><div id="quiz-content"></div></section>
+
+  <section class="modal budget-modal" id="budget-modal" role="dialog" aria-modal="true" aria-label="Budget optimizer"><button class="modal-close" data-close>×</button><div class="eyebrow">AEVOR TOOL / 03</div><h2>Set your <em>budget.</em></h2><p class="modal-lead">We'll find listed watches at or below your target price.</p><label class="budget-label" for="budget-input">Your maximum budget (BDT)</label><div class="budget-input-wrap"><span>৳</span><input id="budget-input" type="number" min="1" max="1000000" value="2000"></div><div class="budget-presets"><button data-budget="500">৳500</button><button data-budget="1000">৳1,000</button><button data-budget="2000">৳2,000</button><button data-budget="3000">৳3,000</button><button data-budget="5000">৳5,000</button></div><button class="btn btn-primary" id="budget-submit">Show my options ↗</button><div id="budget-results"></div></section>
+
+  <section class="modal guide-modal" id="guide-modal" role="dialog" aria-modal="true" aria-label="Buying guide"><button class="modal-close" data-close>×</button><div id="guide-content"></div></section>
+
+  <section class="compare-dock" id="compare-dock" hidden><div><b>Compare watches</b><span id="compare-dock-count">0 of 3 selected</span></div><div id="compare-dock-items"></div><button class="btn btn-primary" id="compare-open">Compare now ↗</button><button class="dock-clear" id="compare-clear" aria-label="Clear comparison">×</button></section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
