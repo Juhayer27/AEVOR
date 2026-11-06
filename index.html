@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AEVOR — Discover Better. Choose Smarter | Watch Discovery in Bangladesh</title>
+<meta name="description" content="AEVOR is a curated watch discovery guide. Compare watches, take the Watch Personality Finder quiz, filter by budget and style, then order from the original marketplace.">
+<meta name="theme-color" content="#111412">
+<meta property="og:type" content="website"><meta property="og:title" content="AEVOR — Discover Better. Choose Smarter">
+<meta property="og:description" content="Curated watches, side-by-side comparison, match scores and honest buying guides.">
+<meta property="og:image" content="logo.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="manifest" href="manifest.json"><link rel="icon" href="logo.png"><link rel="apple-touch-icon" href="logo.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AEVOR","description":"Discover Better. Choose Smarter","sameAs":["https://www.facebook.com/share/1A58M9Cohv/"]}</script>
+<style>
+:root{--bg:#111412;--bg2:#171b18;--card:#1b201d;--ac:#00E6A0;--on:#00140d;--fo:#0f3d2e;--tx:#eef2ef;--mu:#9aa8a0;--bd:#2a332e;--r:18px}
+[data-theme=light]{--bg:#f4f7f5;--bg2:#e9efeb;--card:#fff;--ac:#00a574;--on:#fff;--fo:#d7f2e6;--tx:#111412;--mu:#52625a;--bd:#d3ddd7}
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;transition:background .4s,color .4s;padding-bottom:env(safe-area-inset-bottom)}
+img{max-width:100%;display:block}button,select,input{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:auto;padding:0 18px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(26px,5vw,38px);margin-bottom:6px}.sub{color:var(--mu);margin-bottom:22px}
+.eye{color:var(--ac);font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;margin-bottom:8px}
+section{padding:60px 0}
+/* header */
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:.3s}
+header.s{border-color:var(--bd);box-shadow:0 8px 30px #0004}
+.bar{display:flex;align-items:center;gap:10px;height:62px}
+.logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.2em;font-size:18px}.logo img{width:34px;height:34px;border-radius:9px}
+nav{display:flex;gap:2px;margin:0 auto}
+nav a{position:relative;padding:8px 10px;font-size:14px;color:var(--mu);transition:.25s;cursor:pointer}
+nav a:hover,nav a.on{color:var(--tx)}
+nav a::after{content:"";position:absolute;left:10px;right:10px;bottom:2px;height:2px;background:var(--ac);transform:scaleX(0);transition:.3s}
+nav a:hover::after,nav a.on::after{transform:scaleX(1)}
+.ib{width:40px;height:40px;border-radius:50%;border:1px solid var(--bd);display:grid;place-items:center;position:relative;transition:.25s}
+.ib:hover{border-color:var(--ac);box-shadow:0 0 14px #00e6a033}
+.ib b{position:absolute;top:-4px;right:-4px;background:var(--ac);color:var(--on);font-size:10px;min-width:17px;height:17px;border-radius:9px;display:grid;place-items:center}
+#bg{display:none}
+@media(max-width:940px){#bg{display:grid}nav{position:fixed;top:0;right:0;bottom:0;width:min(78vw,300px);background:var(--bg2);flex-direction:column;padding:80px 18px;transform:translateX(105%);transition:transform .4s cubic-bezier(.2,.8,.2,1);margin:0;border-left:1px solid var(--bd);z-index:60}nav.open{transform:none}nav a{font-size:17px;padding:12px 8px}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:70px 0 60px;background:#0c0f0d;color:#eef2ef}
+.hero::before,.hero::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.28;animation:float 12s ease-in-out infinite}
+.hero::before{background:#00E6A0;top:-200px;right:-120px}.hero::after{background:#0f6b4d;bottom:-260px;left:-160px;animation-delay:-6s}
+@keyframes float{50%{transform:translate(-40px,30px) scale(1.15)}}
+.hg{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(36px,7vw,68px)}.hero h1 em{color:#00E6A0;font-style:normal}
+.hero p{color:#aab8b0;margin:16px 0 26px;max-width:480px}
+.hero .eye,.hero h1,.hero p,.hero .btns{opacity:0;transform:translateY(24px);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.hero h1{animation-delay:.15s}.hero p{animation-delay:.3s}.hero .btns{animation-delay:.45s}
+@keyframes up{to{opacity:1;transform:none}}
+.hero img{border-radius:28px;animation:zoom 14s ease-in-out infinite alternate;box-shadow:0 0 80px #00e6a022}
+@keyframes zoom{to{transform:scale(1.06)}}
+@media(max-width:760px){.hg{grid-template-columns:1fr}.hero img{max-width:300px;margin:auto;order:-1}}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:99px;font-weight:700;font-size:15px;border:1px solid var(--ac);transition:.25s;display:inline-block;text-align:center}
+.btn.p{background:var(--ac);color:var(--on)}.btn.p:hover{box-shadow:0 0 24px #00e6a066;transform:translateY(-2px)}
+.btn.g{color:var(--ac)}.btn.g:hover{background:#00e6a018}
+.btn.sm{padding:9px 14px;font-size:13px}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.35s;animation:up .6s both;animation-delay:calc(var(--i,0)*45ms)}
+.card:hover{transform:translateY(-6px);border-color:var(--ac);box-shadow:0 14px 40px #00e6a022}
+.im{position:relative;aspect-ratio:1/1.1;background:radial-gradient(circle at 50% 40%,#fff 0,#e8ece9 100%);overflow:hidden;cursor:pointer}
+.im img{width:100%;height:100%;object-fit:contain;padding:14px;transition:transform .6s}.card:hover .im img,.zoom:hover img{transform:scale(1.1)}
+.hb,.cb{position:absolute;top:10px;width:36px;height:36px;border-radius:50%;background:#111412cc;color:#fff;display:grid;place-items:center;font-size:17px;transition:.25s}
+.hb{right:10px}.cb{left:10px;font-size:11px;font-weight:800}
+.hb.on{color:var(--ac);animation:pop .4s}.cb.on{background:var(--ac);color:#00140d}
+@keyframes pop{50%{transform:scale(1.4)}}
+.ms{position:absolute;bottom:10px;left:10px;background:var(--ac);color:var(--on);font-size:12px;font-weight:800;padding:3px 10px;border-radius:99px}
+.cbody{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.br{color:var(--mu);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.nm{font-weight:700;font-size:16px}.pr{color:var(--ac);font-weight:800;font-size:18px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tg{font-size:11px;padding:2px 9px;border-radius:99px;border:1px solid var(--bd);color:var(--mu)}
+.ca{display:flex;gap:8px;margin-top:auto;padding-top:8px}.ca .btn{flex:1;padding:9px 6px;font-size:13px}
+/* picks */
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:34px}@media(max-width:760px){.feat{grid-template-columns:1fr}}
+.fc{display:flex;gap:14px;align-items:center;background:linear-gradient(135deg,var(--fo),var(--card));border:1px solid var(--bd);border-radius:var(--r);padding:16px;transition:.3s}.fc:hover{border-color:var(--ac)}
+.fc .im{width:120px;flex:none;aspect-ratio:1;border-radius:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:16px;scrollbar-width:none}
+.chip{white-space:nowrap;padding:8px 16px;border-radius:99px;border:1px solid var(--bd);font-size:14px;color:var(--mu);transition:.25s}.chip.on,.chip:hover{background:var(--ac);color:var(--on);border-color:var(--ac)}
+/* toolbar */
+.tb{display:grid;grid-template-columns:2fr repeat(auto-fit,minmax(120px,1fr));gap:10px;margin-bottom:12px}
+.tb input,.tb select{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:11px 12px;width:100%;min-width:0;transition:.25s}
+.tb input:focus,.tb select:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px #00e6a022}
+.bud{display:flex;align-items:center;gap:12px;margin-bottom:18px;font-size:14px;color:var(--mu)}.bud input{flex:1;accent-color:var(--ac)}.bud b{color:var(--ac);min-width:90px}
+.cnt{color:var(--mu);font-size:14px;margin-bottom:14px}
+.empty{padding:40px;text-align:center;color:var(--mu);border:1px dashed var(--bd);border-radius:var(--r)}
+/* journal */
+.jg{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.jc{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:22px;text-align:left;transition:.3s}.jc:hover{border-color:var(--ac);transform:translateY(-4px)}
+.jc small{color:var(--ac);letter-spacing:.14em;font-size:11px;text-transform:uppercase}.jc h3{margin:8px 0;font-size:19px}.jc p{color:var(--mu);font-size:14px}
+.rv{opacity:0;transform:translateY(34px);transition:1s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+/* modal */
+#md{position:fixed;inset:0;z-index:100;background:#000a;backdrop-filter:blur(6px);display:none;align-items:flex-end;justify-content:center;opacity:0;transition:opacity .3s}
+#md.open{display:flex}#md.show{opacity:1}
+.mb{background:var(--bg2);border:1px solid var(--bd);border-radius:24px 24px 0 0;width:100%;max-width:880px;max-height:92vh;overflow:auto;padding:24px 20px calc(24px + env(safe-area-inset-bottom));transform:translateY(40px) scale(.96);transition:.4s cubic-bezier(.2,.8,.2,1);position:relative}
+#md.show .mb{transform:none}
+@media(min-width:760px){#md{align-items:center}.mb{border-radius:24px}}
+.x{position:sticky;top:0;float:right;width:38px;height:38px;border-radius:50%;background:var(--card);border:1px solid var(--bd);z-index:2;font-size:18px}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:22px;clear:both}@media(max-width:640px){.dg{grid-template-columns:1fr}}
+.dg .im{aspect-ratio:1;border-radius:18px}
+.sp{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}.sp td,.sp th{padding:9px 8px;border-bottom:1px solid var(--bd);text-align:left;vertical-align:middle}.sp th{color:var(--mu);font-weight:500;width:34%}
+.best{color:var(--ac);font-weight:800}.sp tr:hover td{background:#00e6a010}
+.why{margin:10px 0;padding-left:18px;color:var(--mu);font-size:14px}.why li::marker{color:var(--ac)}
+.scr{overflow-x:auto}.scr .sp{min-width:520px}.scr img{width:80px;margin:auto;background:#fff;border-radius:10px;padding:4px}
+.mini{display:flex;gap:10px;overflow-x:auto;padding:6px 0}.mini a{flex:none;width:96px;font-size:12px;cursor:pointer}.mini img{background:#fff;border-radius:12px;padding:4px;aspect-ratio:1;object-fit:contain;margin-bottom:4px;transition:.3s}.mini a:hover img{transform:translateY(-3px);box-shadow:0 0 14px #00e6a044}
+.pg{height:6px;background:var(--bd);border-radius:9px;overflow:hidden;margin:14px 0 20px}.pg i{display:block;height:100%;background:var(--ac);transition:width .5s}
+.opts{display:grid;gap:10px;margin:14px 0}.op{padding:14px;border:1px solid var(--bd);border-radius:14px;text-align:left;background:var(--card);transition:.25s}.op:hover{border-color:var(--ac);transform:translateX(4px)}
+.qs{animation:up .5s both}
+.art p{margin:12px 0;color:var(--mu)}.art h2{font-size:26px;margin-top:6px}
+/* tray + toast */
+#tray{position:fixed;left:50%;bottom:16px;transform:translate(-50%,120px);background:var(--card);border:1px solid var(--ac);border-radius:99px;padding:8px 8px 8px 18px;display:flex;gap:10px;align-items:center;z-index:70;transition:.4s;box-shadow:0 10px 40px #0007;font-size:14px;white-space:nowrap}
+#tray.on{transform:translate(-50%,0)}
+#toast{position:fixed;top:76px;left:50%;transform:translate(-50%,-30px);background:var(--ac);color:var(--on);font-weight:700;padding:10px 20px;border-radius:99px;opacity:0;transition:.35s;z-index:200;pointer-events:none}#toast.on{opacity:1;transform:translate(-50%,0)}
+footer{border-top:1px solid var(--bd);padding:36px 0 90px;color:var(--mu);font-size:14px}footer .wrap{display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+.ab{background:linear-gradient(135deg,var(--fo),var(--bg));border:1px solid var(--bd);border-radius:28px;padding:clamp(24px,5vw,52px)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero *{opacity:1!important;transform:none!important}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap bar">
+<a class="logo" href="#top"><img src="logo.png" alt="AEVOR logo" width="34" height="34">AEVOR</a>
+<nav id="nav" aria-label="Main">
+<a data-go="home" class="on">Home</a><a data-go="all">All Watches</a><a data-go="Men">Men's</a><a data-go="Women">Women's</a><a data-go="Analog">Analog</a><a data-go="Digital">Digital</a><a data-go="Sports">Sports</a><a data-go="compare">Comparisons</a><a data-go="journal">Buying Guides</a><a data-go="about">About</a>
+</nav>
+<button class="ib" id="th" aria-label="Toggle dark and light mode">◐</button>
+<button class="ib" id="wlb" aria-label="My watchlist">♥<b id="wlc">0</b></button>
+<button class="ib" id="bg" aria-label="Menu">☰</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap hg">
+<div><div class="eye">Watch discovery, reimagined</div>
+<h1>Discover Better.<br><em>Choose Smarter.</em></h1>
+<p>A new perspective on time, crafted for those who value every second. Curated watches, honest comparisons and a match score that explains the choice.</p>
+<div class="btns"><button class="btn p" data-a="quiz">Find my watch</button><button class="btn g" data-go="all">Browse watches</button><button class="btn g" id="inst" hidden>Install app</button></div></div>
+<img src="logo.png" alt="AEVOR watch emblem" width="512" height="512" fetchpriority="high">
+</div></div>
+
+<section id="picks"><div class="wrap rv">
+<div class="eye">AEVOR Picks</div><h2>Handpicked by us</h2><p class="sub">Our editor's choice and a weekly spotlight, then curated collections.</p>
+<div class="feat" id="feat"></div>
+<div class="chips" id="chips"></div><div class="grid" id="pg"></div>
+</div></section>
+
+<section id="watches" style="background:var(--bg2)"><div class="wrap">
+<div class="eye">The Catalogue</div><h2 id="ct">All Watches</h2><p class="sub">Search, filter, sort, then compare up to three.</p>
+<div class="tb" id="tb"></div>
+<div class="bud"><span>Budget Optimizer</span><input type="range" id="bud" min="0" max="4000" step="100" value="0" aria-label="Maximum budget"><b id="bl">Any budget</b></div>
+<div class="cnt" id="cn"></div><div class="grid" id="grid"></div>
+</div></section>
+
+<section id="journal"><div class="wrap rv">
+<div class="eye">Watch Journal</div><h2>Buying guides</h2><p class="sub">Plain-language help to choose with confidence.</p>
+<div class="jg" id="jg"></div></div></section>
+
+<section id="about"><div class="wrap rv"><div class="ab">
+<div class="eye">About AEVOR</div><h2>Discover Better. Choose Smarter</h2>
+<p class="sub" style="margin:10px 0 18px;max-width:620px">A new perspective on time, crafted for those who value every second. A new era of watch finding begins here. AEVOR does not sell watches directly: every “Order Now” button takes you to the original marketplace page.</p>
+<a class="btn p" href="https://www.facebook.com/share/1A58M9Cohv/" target="_blank" rel="noopener">Contact us on Facebook</a>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><div><b>AEVOR</b> — Discover Better. Choose Smarter<br>Prices are listed at the time of curation and may change on the marketplace.</div>
+<div>Affiliate disclosure: AEVOR may earn a commission when you order through our links, at no extra cost to you.</div></div></footer>
+
+<div id="tray"><span id="tn"></span><button class="btn p sm" data-a="cmp">Compare</button><button class="btn g sm" data-a="cclear">Clear</button></div>
+<div id="md" role="dialog" aria-modal="true"><div class="mb" id="mb"></div></div>
+<div id="toast"></div>
+
+<script src="products.js"></script>
+<script>
+const P=AEVOR_PRODUCTS,$=s=>document.querySelector(s);
+const ls={get:(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v??d}catch{return d}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
+const fmt=p=>p==null?'Check price':'৳'+p.toLocaleString('en-US');
+const byId=id=>P.find(p=>p.id===id);
+let wl=ls.get('av_wl',[]),rv=ls.get('av_rv',[]),pref=ls.get('av_pref',null),cmp=[],col='best';
+const F0={q:'',gender:'',type:'',strap:'',movement:'',style:'',max:0,sort:'pd'};let F={...F0};
+const FK=[['gender','Gender'],['type','Type'],['strap','Strap'],['movement','Movement'],['style','Style']];
+const uniq=k=>[...new Set(P.map(p=>p[k]).filter(Boolean))];
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>e.classList.remove('on'),2200)}
+function copy(t){(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Link copied'),()=>prompt('Copy this link',t))}
+/* match */
+function score(p){if(!pref)return null;let s=0,r=[];
+if(pref.g==='Any'||p.gender===pref.g||p.gender==='Unisex'){s+=30;pref.g!=='Any'&&r.push('Made for '+pref.g.toLowerCase()+'’s wear')}
+if(pref.t==='Any'||p.type===pref.t){s+=30;pref.t!=='Any'&&r.push(p.type+' display, as you wanted')}
+if(!pref.b||(p.price!=null&&p.price<=pref.b)){s+=30;r.push(pref.b?'Within your '+fmt(pref.b)+' budget':'No budget limit set')}
+if(pref.s==='Any')s+=10;else if(!p.style)s+=5;else if(p.style===pref.s){s+=10;r.push(pref.s+' style')}
+return{s,r}}
+/* views */
+function card(p,i=0){const m=score(p),w=wl.includes(p.id),c=cmp.includes(p.id);
+const tg=[p.type,p.gender,p.movement,p.strap].filter(Boolean).map(t=>`<span class="tg">${t}</span>`).join('');
+return `<article class="card" style="--i:${i}"><div class="im" data-a="view" data-id="${p.id}"><img src="${p.img}" alt="${p.name} watch" loading="lazy" onerror="this.src='logo.png'">
+<button class="hb ${w?'on':''}" data-a="wl" data-id="${p.id}" aria-label="Save to watchlist">${w?'♥':'♡'}</button>
+<button class="cb ${c?'on':''}" data-a="cp" data-id="${p.id}" aria-label="Add to comparison">${c?'✓':'VS'}</button>${m?`<span class="ms">${m.s}% match</span>`:''}</div>
+<div class="cbody"><div class="br">${p.brand}</div><h3 class="nm">${p.name}</h3><div class="pr">${fmt(p.price)}</div><div class="tags">${tg}</div>
+<div class="ca"><button class="btn g" data-a="view" data-id="${p.id}">View Details</button><a class="btn p" href="${p.link}" target="_blank" rel="sponsored nofollow noopener">Order Now</a></div></div></article>`}
+function list(){const q=F.q.toLowerCase();let a=P.filter(p=>(!q||(p.name+' '+p.brand).toLowerCase().includes(q))&&FK.every(([k])=>!F[k]||p[k]===F[k])&&(!F.max||(p.price!=null&&p.price<=F.max)));
+const s=F.sort;a.sort(s==='pa'?(x,y)=>(x.price??1e9)-(y.price??1e9):s==='n'?(x,y)=>x.name.localeCompare(y.name):s==='m'&&pref?(x,y)=>score(y).s-score(x).s:(x,y)=>(y.price??-1)-(x.price??-1));return a}
+function render(){const a=list();$('#cn').textContent=a.length+' watch'+(a.length!==1?'es':'')+' found';
+$('#grid').innerHTML=a.length?a.map(card).join(''):'<div class="empty">No watch matches these filters. Try widening your budget or clearing a filter.</div>';
+$('#wlc').textContent=wl.length;
+$('#tray').classList.toggle('on',cmp.length>0);$('#tn').textContent=cmp.length+'/3 selected';
+$('#bl').textContent=F.max?'Up to '+fmt(F.max):'Any budget';$('#bud').value=F.max;
+$('#tb').querySelectorAll('[data-k]').forEach(e=>e.value=F[e.dataset.k]);}
+function buildTb(){$('#tb').innerHTML=`<input data-k="q" type="search" placeholder="Search watches or brands" aria-label="Search">`+
+FK.filter(([k])=>uniq(k).length).map(([k,l])=>`<select data-k="${k}" aria-label="${l}"><option value="">${l}: All</option>${uniq(k).map(v=>`<option>${v}</option>`).join('')}</select>`).join('')+
+`<select data-k="sort" aria-label="Sort"><option value="pd">Curated ranking</option><option value="pa">Price: low to high</option><option value="n">Name A–Z</option>${pref?'<option value="m">Best match</option>':''}</select>`}
+function picks(){const top=[...P].filter(p=>p.price!=null).sort((a,b)=>b.price-a.price),ed=top[0],wk=top[Math.floor(Date.now()/6048e5)%Math.min(5,top.length)];
+const fc=(l,p)=>`<div class="fc"><div class="im" data-a="view" data-id="${p.id}"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.src='logo.png'"></div><div><div class="eye" style="margin:0">${l}</div><h3>${p.name}</h3><div class="pr">${fmt(p.price)}</div><button class="btn g sm" style="margin-top:8px" data-a="view" data-id="${p.id}">View Details</button></div></div>`;
+$('#feat').innerHTML=fc("Editor's Choice",ed)+fc('Watch of the Week',wk);
+const C={best:['AEVOR Best Picks',()=>top.slice(0,4)],u1:['Under ৳1,000',()=>P.filter(p=>p.price!=null&&p.price<1000)],u2:['Under ৳2,000',()=>P.filter(p=>p.price!=null&&p.price<2000)],men:['Best for Men',()=>top.filter(p=>p.gender==='Men').slice(0,4)],wom:['Best for Women',()=>top.filter(p=>p.gender==='Women').slice(0,4)]};
+$('#chips').innerHTML=Object.entries(C).map(([k,[l]])=>`<button class="chip ${k===col?'on':''}" data-a="col" data-id="${k}">${l}</button>`).join('');
+$('#pg').innerHTML=C[col][1]().map(card).join('')||'<div class="empty">No watches in this collection yet.</div>';}
+/* modal */
+const md=$('#md');
+function open(h){$('#mb').innerHTML='<button class="x" data-a="close" aria-label="Close">✕</button>'+h;md.classList.add('open');requestAnimationFrame(()=>md.classList.add('show'));document.body.style.overflow='hidden'}
+function close(){md.classList.remove('show');document.body.style.overflow='';setTimeout(()=>md.classList.remove('open'),300)}
+function view(id){const p=byId(id);if(!p)return;rv=[id,...rv.filter(x=>x!==id)].slice(0,8);ls.set('av_rv',rv);
+const m=score(p),rel=P.filter(x=>x.id!==id&&(x.type===p.type||x.gender===p.gender)).sort((a,b)=>Math.abs((a.price??0)-(p.price??0))-Math.abs((b.price??0)-(p.price??0))).slice(0,6);
+const rows=[['Brand',p.brand],['Type',p.type],['Gender',p.gender],['Movement',p.movement],['Strap',p.strap],['Style',p.style],['Marketplace','Rokomari']].filter(r=>r[1]).map(r=>`<tr><th>${r[0]}</th><td>${r[1]}</td></tr>`).join('');
+const mini=a=>`<div class="mini">${a.map(x=>`<a data-a="view" data-id="${x.id}"><img src="${x.img}" alt="${x.name}" loading="lazy" onerror="this.src='logo.png'">${x.name}</a>`).join('')}</div>`;
+const rvl=rv.filter(x=>x!==id).map(byId).filter(Boolean);
+open(`<div class="dg"><div class="im zoom"><img src="${p.img}" alt="${p.name} watch" onerror="this.src='logo.png'"></div><div><div class="br">${p.brand}</div><h2 style="font-size:28px">${p.name}</h2><div class="pr" style="font-size:26px">${fmt(p.price)}</div>
+${m?`<p style="margin-top:10px"><b class="best">${m.s}% AEVOR Match</b></p><ul class="why">${m.r.map(r=>`<li>${r}</li>`).join('')}</ul>`:'<p class="sub" style="margin:8px 0">Take the Watch Finder to see your match score.</p>'}
+<table class="sp">${rows}</table><div class="btns"><a class="btn p" href="${p.link}" target="_blank" rel="sponsored nofollow noopener">Order Now</a><button class="btn g" data-a="wl" data-id="${id}">${wl.includes(id)?'♥ Saved':'♡ Save'}</button><button class="btn g" data-a="cp" data-id="${id}">Compare</button></div></div></div>
+<h3 style="margin:22px 0 4px">Related watches</h3>${mini(rel)}${rvl.length?`<h3 style="margin:14px 0 4px">Recently viewed</h3>${mini(rvl)}`:''}`)}
+function compare(){if(cmp.length<2)return toast('Pick at least 2 watches (tap VS)');const a=cmp.map(byId),pr=a.map(p=>p.price??1e9),lo=Math.min(...pr);
+const row=(l,f)=>{const v=a.map(f);return v.some(x=>x&&x!=='—')?`<tr><th>${l}</th>${v.map(x=>`<td>${x||'—'}</td>`).join('')}</tr>`:''};
+const url=location.origin+location.pathname+'#c='+cmp.join(',');
+open(`<h2>Comparison Studio</h2><p class="sub">Lowest listed price is highlighted.</p><div class="scr"><table class="sp"><tr><th></th>${a.map(p=>`<td><img src="${p.img}" alt="${p.name}" onerror="this.src='logo.png'"><br><b>${p.name}</b></td>`).join('')}</tr>
+<tr><th>Price</th>${a.map(p=>`<td class="${(p.price??1e9)===lo&&p.price!=null?'best':''}">${fmt(p.price)}</td>`).join('')}</tr>
+${row('Brand',p=>p.brand)}${row('Type',p=>p.type)}${row('Gender',p=>p.gender)}${row('Movement',p=>p.movement)}${row('Strap',p=>p.strap)}${row('Style',p=>p.style)}${row('Marketplace',()=>'Rokomari')}
+<tr><th></th>${a.map(p=>`<td><a class="btn p sm" href="${p.link}" target="_blank" rel="sponsored nofollow noopener">Order Now</a></td>`).join('')}</tr></table></div>
+<button class="btn g" onclick="copy('${url}')">Share comparison</button>`)}
+function wlist(ids,own){const a=ids.map(byId).filter(Boolean);
+open(`<h2>${own?'My Watchlist':'Shared Watchlist'}</h2><p class="sub">${own?'Saved on this device only.':'Someone shared these favourites with you.'}</p>${a.length?`<div class="grid">${a.map(card).join('')}</div>`:'<div class="empty">Nothing saved yet. Tap the heart on any watch.</div>'}${own&&a.length?`<br><button class="btn g" onclick="copy(location.origin+location.pathname+'#w=${wl.join(',')}')">Share watchlist</button>`:''}`)}
+/* quiz */
+const Q=[['Who is it for?','g',[['Men','Men'],['Women','Women'],['Anyone','Any']]],['Preferred display?','t',[['Analog','Analog'],['Digital','Digital'],['Smart','Smart'],['No preference','Any']]],['Your budget?','b',[['Up to ৳1,000',1000],['Up to ৳2,000',2000],['Up to ৳3,500',3500],['No limit',0]]],['Your vibe?','s',[['Sports','Sports'],['Casual','Casual'],['Formal','Formal'],['Surprise me','Any']]]];
+let qa={};
+function quiz(i=0){if(i===0)qa={};if(i>=Q.length){pref=qa;ls.set('av_pref',pref);buildTb();const r=[...P].sort((a,b)=>score(b).s-score(a).s).slice(0,3);
+open(`<div class="qs"><div class="eye">Your result</div><h2>Your top matches</h2><p class="sub">Scores explain how each watch fits your answers.</p><div class="grid">${r.map(card).join('')}</div><br><button class="btn p" data-a="allm">See all with match scores</button></div>`);render();return}
+const[q,k,o]=Q[i];open(`<div class="qs"><div class="eye">Watch Personality Finder · ${i+1}/${Q.length}</div><div class="pg"><i style="width:${i/Q.length*100}%"></i></div><h2>${q}</h2><div class="opts">${o.map(([l,v])=>`<button class="op" data-a="qa" data-k="${k}" data-v="${v}" data-i="${i}">${l}</button>`).join('')}</div></div>`);
+requestAnimationFrame(()=>{const b=document.querySelector('.pg i');b&&(b.style.width=(i+1)/Q.length*100+'%')})}
+/* journal */
+const J=[['Quartz vs Automatic','Quartz watches run on a battery and a vibrating crystal. They are usually more affordable and need little care.','Automatic watches are powered by a mechanism wound by wrist motion. They appeal to people who enjoy mechanical craft, and typically need more maintenance and cost more.','Choose quartz for everyday simplicity and value. Choose automatic if the mechanism itself matters to you.'],
+['How to Choose Your First Watch','Start with how you will wear it. Daily office, sports and weekend wear each favour different styles.','Set a budget first, then pick a display type: analog for classic looks, digital for quick readability, smart for notifications and tracking.','Check the strap, the size on your wrist and the seller’s return terms before you order.'],
+['Best Watches for Everyday Use','An everyday watch should be comfortable, easy to read and tough enough for daily knocks.','Simple analog dials and well-known digital designs are easy to live with. Avoid anything you would be afraid to scratch.','Use the AEVOR filters to narrow by type and budget, then compare your final two.'],
+['Leather Strap vs Stainless Steel','Leather feels soft and dressy but can wear with sweat and water over time.','Stainless steel is sturdy and easy to clean, though heavier and sometimes warmer on the wrist.','Leather suits formal and casual wear. Steel suits all-day, all-weather use.']];
+$('#jg').innerHTML=J.map((j,i)=>`<button class="jc" data-a="art" data-id="${i}"><small>Guide</small><h3>${j[0]}</h3><p>${j[1]}</p></button>`).join('');
+/* events */
+function go(g){F={...F0};const t={all:'All Watches',Men:"Men's Watches",Women:"Women's Watches",Analog:'Analog Watches',Digital:'Digital Watches',Sports:'Sports Watches'};
+document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.dataset.go===g));$('#nav').classList.remove('open');
+if(g==='home')return scrollTo({top:0,behavior:'smooth'});
+if(g==='compare'){cmp.length>1?compare():(toast('Tap VS on 2–3 watches, then Compare'),$('#watches').scrollIntoView());return}
+if(g==='journal'||g==='about')return $('#'+g).scrollIntoView();
+if(g==='Men'||g==='Women')F.gender=g;else if(g==='Analog'||g==='Digital')F.type=g;else if(g==='Sports')F.style='Sports';
+$('#ct').textContent=t[g];render();$('#watches').scrollIntoView()}
+document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g)return go(g.dataset.go);
+const b=e.target.closest('[data-a]');if(!b)return;if(b.tagName==='A')return;const id=+b.dataset.id,a=b.dataset.a;e.stopPropagation();
+if(a==='view')view(id);else if(a==='close')close();else if(a==='quiz')quiz();
+else if(a==='wl'){wl=wl.includes(id)?wl.filter(x=>x!==id):[...wl,id];ls.set('av_wl',wl);toast(wl.includes(id)?'Saved to watchlist':'Removed');render();picks();if(md.classList.contains('open')&&b.closest('.dg'))view(id)}
+else if(a==='cp'){if(cmp.includes(id))cmp=cmp.filter(x=>x!==id);else if(cmp.length>=3)return toast('You can compare up to 3');else cmp.push(id);render();picks()}
+else if(a==='cmp')compare();else if(a==='cclear'){cmp=[];render();picks()}
+else if(a==='col'){col=b.dataset.id;picks()}
+else if(a==='qa'){const v=b.dataset.v;qa[b.dataset.k]=isNaN(v)||v===''?v:+v;quiz(+b.dataset.i+1)}
+else if(a==='allm'){F.sort='m';close();render();$('#tb [data-k=sort]').value='m';$('#watches').scrollIntoView()}
+else if(a==='art'){const j=J[id];open(`<article class="art"><div class="eye">Watch Journal</div><h2>${j[0]}</h2>${j.slice(1).map(t=>`<p>${t}</p>`).join('')}<button class="btn p" data-a="close" data-go="all">Browse watches</button></article>`)}});
+$('#tb').addEventListener('input',e=>{const k=e.target.dataset.k;if(k){F[k]=e.target.value;render()}});
+$('#bud').addEventListener('input',e=>{F.max=+e.target.value;render()});
+md.addEventListener('click',e=>{if(e.target===md)close()});addEventListener('keydown',e=>e.key==='Escape'&&close());
+$('#wlb').onclick=()=>wlist(wl,true);$('#bg').onclick=()=>$('#nav').classList.toggle('open');
+const th=ls.get('av_theme','dark');document.documentElement.dataset.theme=th;
+$('#th').onclick=()=>{const t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;ls.set('av_theme',t);document.querySelector('meta[name=theme-color]').content=t==='dark'?'#111412':'#f4f7f5'};
+addEventListener('scroll',()=>$('#hd').classList.toggle('s',scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&(e.target.classList.add('in'),io.unobserve(e.target))),{threshold:.1});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+/* SEO structured data (generated from products.js) */
+const ld=document.createElement('script');ld.type='application/ld+json';ld.textContent=JSON.stringify({'@context':'https://schema.org','@type':'ItemList',itemListElement:P.map((p,i)=>({'@type':'ListItem',position:i+1,item:{'@type':'Product',name:p.name,brand:{'@type':'Brand',name:p.brand},image:p.img,...(p.price!=null&&{offers:{'@type':'Offer',priceCurrency:'BDT',price:p.price,url:p.link}})}}))});document.head.appendChild(ld);
+/* PWA */
+let dp;addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;$('#inst').hidden=false});
+$('#inst').onclick=()=>dp&&dp.prompt();
+if('serviceWorker'in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+/* init */
+buildTb();picks();render();
+const h=location.hash;if(h.startsWith('#c=')){cmp=h.slice(3).split(',').map(Number).filter(byId).slice(0,3);render();compare()}else if(h.startsWith('#w=')){wlist(h.slice(3).split(',').map(Number),false)}
+</script>
+</body>
+</html>
